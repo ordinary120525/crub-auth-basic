@@ -1,0 +1,14 @@
+ul,
+li {
+ list-style: none;
+}
+li {
+ margin-bottom: 8px;
+}
+button {
+ margin-left: 5px;
+}
+
+.hidden {
+ display: none;
+}

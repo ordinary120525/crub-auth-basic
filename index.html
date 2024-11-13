@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase CRUD basic</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>파이어베이스 CRUD 및 인증</h1>
+      <!-- 로그인 및 회원가입 영역 -->
+      <div id="auth-section">
+        <input
+          type="email"
+          id="email"
+          placeholder="example@email.com"
+          autocomplete="off"
+          autofocus
+        />
+        <input type="password" id="password" placeholder="password" />
+        <button id="sign-up-btn">회원가입</button>
+        <button id="sign-in-btn">로그인</button>
+        <button id="google-sign-in-btn">구글 로그인</button>
+        <p>로그인을 하면 글을 등록할 수 있습니다!</p>
+      </div>
+      <p id="message"></p>
+      <button id="logout-btn">로그아웃</button>
+
+      <!-- 글 작성 및 목록 표시 영역 -->
+      <div id="board-section">
+        <h2>게시물 목록</h2>
+        <div id="new-post-section">
+          <input
+            type="text"
+            id="new-post-content"
+            placeholder="새 글을 입력하세요!"
+            autocomplete="off"
+          />
+          <button id="add-post-btn">글 등록하기</button>
+        </div>
+
+        <ul id="post-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
